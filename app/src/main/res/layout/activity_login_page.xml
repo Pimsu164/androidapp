@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login_page">
+
+    <TextView
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Homepals"
+        android:textColor="@color/orange"
+        android:textSize="40dp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:src="@drawable/login_pic">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/border"
+        android:drawablePadding="8dp"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/input_password"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawablePadding="8dp"
+        android:textColor="@color/black"/>
+
+
+    <Button
+        android:id="@+id/password_forgot"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="180dp"
+        android:text="      Forgot Password ?"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+         />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Login"
+        android:textSize="18sp"
+        android:backgroundTint="@color/orange"
+        app:cornerRadius = "5dp"/>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="145dp"
+            android:text="don’t have an account ?">
+        </TextView>
+
+        <Button
+            android:id="@+id/go_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sign up"
+            android:textColor="@color/black"
+            style="@style/Widget.MaterialComponents.Button.TextButton">
+    </Button>
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+</LinearLayout>

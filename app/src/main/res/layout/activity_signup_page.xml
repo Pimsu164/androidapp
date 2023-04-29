@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".signup_page">
+
+    <TextView
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="40dp"
+        android:textStyle="bold"></TextView>
+
+    <GridLayout
+        android:layout_width="398dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/get_f_name"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:drawablePadding="8dp"
+            android:hint="First Name"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/get_l_name"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:drawablePadding="8dp"
+            android:hint="Last Name"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/get_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/border"
+        android:drawablePadding="8dp"
+        android:hint="Username"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/get_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/border"
+        android:drawablePadding="8dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/get_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/border"
+        android:drawablePadding="8dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/get_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/border"
+        android:drawablePadding="8dp"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="8dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Sign up"
+        android:textSize="18sp"
+        android:backgroundTint="@color/orange"
+        app:cornerRadius = "5dp"/>
+
+    <ImageView
+        android:layout_width="410dp"
+        android:layout_height="220dp"
+        android:src="@drawable/signup_pic">
+
+    </ImageView>
+
+</LinearLayout>
