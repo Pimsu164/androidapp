@@ -3,6 +3,7 @@ package com.example.homepals_app;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
@@ -81,7 +82,16 @@ public class login_page extends AppCompatActivity {
                     AlertDialog dialog = builder.create();
                     dialog.show();
                 }
-                else Log.d("login_page","OK"+username+" "+password);
+                else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(login_page.this);
+                    builder.setMessage("Login Successful!")
+                            .setPositiveButton("Enter", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    Intent intent = new Intent(login_page.this, home_page.class);
+                                    startActivity(intent);
+                                }
+                            }).create().show();
+                }
             }
         });
 

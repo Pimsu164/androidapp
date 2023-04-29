@@ -182,6 +182,7 @@ public class signup_page extends AppCompatActivity {
                                     }
                                 }).create().show();
                     }
+
                 }
         });
     }
